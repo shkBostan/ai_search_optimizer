@@ -1,6 +1,14 @@
 """
-Professional build & run script for AI Search Optimizer.
-Runs all steps in order and launches Flask API.
+Created on Sep, 2025
+Author: s Bostan
+
+Description:
+    Script to sequentially run the full pipeline for AI Search Optimizer:
+        1. Load and preprocess documents
+        2. Build BM25 index
+        3. Encode documents with semantic embeddings and build FAISS index
+        4. Persist metadata and indexes
+    Intended as a single entry-point to initialize all necessary components.
 """
 
 import os
