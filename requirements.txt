@@ -1,0 +1,10 @@
+flask
+sentence-transformers
+faiss-cpu
+numpy
+pandas
+rank-bm25
+scikit-learn
+uvicorn
+gunicorn
+tqdm
