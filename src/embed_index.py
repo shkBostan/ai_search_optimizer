@@ -6,6 +6,8 @@ Description:
     This module builds dense embeddings for a collection of documents using
     SentenceTransformer models and creates a FAISS index for fast semantic search.
     Also persists metadata (id/title mapping) for later retrieval.
+
+Licensed under the Apache License 2.0.
 """
 
 import numpy as np
@@ -73,7 +75,7 @@ def save_metadata(meta, path="meta.pkl"):
 if __name__ == "__main__":
     try:
         from ingest import load_data
-        data_path = r"E:\pythonProject-github-public\ai_search_optimizer\data\articles.csv"
+        data_path = r"E:\pythonProject-github-public\ai_serach_optimizer\ai_search_optimizer\data\articles.csv"
         logger.info(f"Loading documents from '{data_path}'...")
         docs, meta = load_data(data_path)
         logger.info(f"{len(docs)} documents loaded.")

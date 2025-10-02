@@ -9,6 +9,8 @@ Description:
         3. Encode documents with semantic embeddings and build FAISS index
         4. Persist metadata and indexes
     Intended as a single entry-point to initialize all necessary components.
+
+Licensed under the Apache License 2.0.
 """
 
 import os

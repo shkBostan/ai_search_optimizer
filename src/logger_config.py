@@ -1,3 +1,13 @@
+"""
+Created on Sep, 2025
+Author: s Bostan
+
+Description:
+    Set up logging for AI Search Optimizer, with console and rotating file handlers.
+
+Licensed under the Apache License 2.0.
+"""
+
 import logging
 from logging.handlers import RotatingFileHandler
 import os

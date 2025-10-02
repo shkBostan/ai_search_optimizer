@@ -8,6 +8,8 @@ Description:
         - build_bm25: tokenizes documents and constructs BM25 index
         - save_bm25: saves BM25 object and tokenized documents to a pickle file
     This module is used to support hybrid search scoring along with semantic embeddings.
+
+Licensed under the Apache License 2.0.
 """
 
 from rank_bm25 import BM25Okapi
@@ -51,7 +53,7 @@ def save_bm25(bm25, tokenized, path="bm25.pkl"):
 # Execute when run directly
 # ----------------------------
 if __name__ == "__main__":
-    data_path = r"E:\pythonProject-github-public\ai_search_optimizer\data\articles.csv"
+    data_path = r"E:\pythonProject-github-public\ai_serach_optimizer\ai_search_optimizer\data\articles.csv"
 
     # Load documents
     docs, meta = load_data(data_path)

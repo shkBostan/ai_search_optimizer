@@ -7,6 +7,8 @@ Description:
     Includes I/O helpers, text normalization, cleaning, and other
     reusable functions to support data ingestion, preprocessing,
     and model indexing.
+
+Licensed under the Apache License 2.0.
 """
 
 import numpy as np

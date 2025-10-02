@@ -6,6 +6,8 @@ Description:
     Provides evaluation metrics for information retrieval experiments.
     Includes precision@k, NDCG (Normalized Discounted Cumulative Gain),
     and other helper functions for measuring retrieval performance.
+
+Licensed under the Apache License 2.0.
 """
 
 import numpy as np

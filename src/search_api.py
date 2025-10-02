@@ -4,6 +4,8 @@ Author: s Bostan
 
 Description:
     Flask API for hybrid semantic + BM25 search.
+
+Licensed under the Apache License 2.0.
 """
 
 from flask import Flask, request, jsonify
@@ -107,7 +109,7 @@ def search():
     if rerank_flag:
         try:
             from ingest import load_data
-            docs, _ = load_data(r"E:\pythonProject-github-public\ai_search_optimizer\data\articles.csv")
+            docs, _ = load_data(r"E:\pythonProject-github-public\ai_serach_optimizer\ai_search_optimizer\data\articles.csv")
             pairs = [(q, docs[doc_index]) for doc_index, _ in results]
             ce_scores = cross_encoder.predict(pairs)
             results = sorted(

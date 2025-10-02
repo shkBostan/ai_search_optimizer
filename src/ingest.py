@@ -5,6 +5,8 @@ Author: s Bostan
 Description:
     Load CSV files containing articles, clean text,
     and return documents and metadata.
+
+Licensed under the Apache License 2.0.
 """
 
 import pandas as pd
@@ -56,6 +58,6 @@ def load_data(path: str):
 # Main execution
 # ----------------------------
 if __name__ == "__main__":
-    data_path = r"E:\pythonProject-github-public\ai_search_optimizer\data\articles.csv"
+    data_path = r"E:\pythonProject-github-public\ai_serach_optimizer\ai_search_optimizer\data\articles.csv"
     docs, meta = load_data(data_path)
     logger.info(f"Data loading complete. Total documents: {len(docs)}")
